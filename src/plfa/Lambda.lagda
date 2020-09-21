@@ -141,7 +141,7 @@ plus = μ "+" ⇒ ƛ "m" ⇒ ƛ "n" ⇒
 The recursive definition of addition is similar to our original
 definition of `_+_` for naturals, as given in
 Chapter [Naturals][plfa.Naturals#plus].
-Here variable "m" is bound twice, once in a lambda abstraction and once in
+Here the variable "m" is bound twice, once in a lambda abstraction and once in
 the successor branch of the case; the first use of "m" refers to
 the former and the second to the latter.  Any use of "m" in the successor branch
 must refer to the latter binding, and so we say that the latter binding _shadows_
@@ -562,7 +562,7 @@ letter `β` (_beta_) and such rules are traditionally called _beta rules_.
 
 A bit of terminology: A term that matches the left-hand side of a
 reduction rule is called a _redex_. In the redex `(ƛ x ⇒ N) · V`, we
-may refer to `x` as the _formal parameter_` of the function, and `V`
+may refer to `x` as the _formal parameter_ of the function, and `V`
 as the _actual parameter_ of the function application.  Beta reduction
 replaces the formal parameter by the actual parameter.
 
@@ -632,7 +632,7 @@ This is referred to as _call by value_ reduction.
 Further, we have arranged that subterms are reduced in a
 left-to-right order.  This means that reduction is _deterministic_:
 for any term, there is at most one other term to which it reduces.
-Put another way, our reduction relation `—→` is in fact a function.
+Put another way, our reduction relation `—→` is in fact a (partial) function.
 
 
 #### Quiz
